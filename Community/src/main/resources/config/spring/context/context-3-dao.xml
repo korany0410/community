@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="advertisement_dao" class="dao.AdvertisementDAO">
+		<property name="sqlSession" ref="sqlSessionBean"></property>
+	</bean>
+	<bean id="comment_dao" class="dao.CommentDAO">
+		<property name="sqlSession" ref="sqlSessionBean"></property>
+	</bean>
+	<bean id="post_dao" class="dao.PostDAO">
+		<property name="sqlSession" ref="sqlSessionBean"></property>
+	</bean>
+	<bean id="user_comment_dao" class="dao.User_CommentDAO">
+		<property name="sqlSession" ref="sqlSessionBean"></property>
+	</bean>
+	<bean id="user_post_dao" class="dao.User_PostDAO">
+		<property name="sqlSession" ref="sqlSessionBean"></property>
+	</bean>
+	<bean id="user_dao" class="dao.UserDAO">
+		<property name="sqlSession" ref="sqlSessionBean"></property>
+	</bean>
+	
+</beans>
