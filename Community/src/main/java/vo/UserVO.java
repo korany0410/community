@@ -1,7 +1,7 @@
 package vo;
 
 public class UserVO {
-	private int user_idx, level;
+	private int user_idx, user_level;
 	private String email, pwd, username, type, regdate;
 
 	public int getUser_idx() {
@@ -12,12 +12,12 @@ public class UserVO {
 		this.user_idx = user_idx;
 	}
 
-	public int getLevel() {
-		return level;
+	public int getUser_level() {
+		return user_level;
 	}
 
-	public void setLevel(int level) {
-		this.level = level;
+	public void setUser_level(int user_level) {
+		this.user_level = user_level;
 	}
 
 	public String getEmail() {
